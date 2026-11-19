@@ -1,0 +1,102 @@
+/* delivery.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    color: #2b2d42;
+    line-height: 1.6;
+}
+
+.topo {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #e63946, #ff8c42);
+    color: #fff;
+}
+
+.topo h1 {
+    font-size: 2.5em;
+}
+
+.cardapio {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.cardapio h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filtro {
+    border: 2px solid #e63946;
+    background: #fff;
+    color: #e63946;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filtro.ativo,
+.filtro:hover {
+    background: #e63946;
+    color: #fff;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.prato {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+}
+
+.prato:hover {
+    transform: translateY(-4px);
+}
+
+.prato.escondido {
+    display: none;
+}
+
+.icone {
+    font-size: 2.5em;
+}
+
+.prato p {
+    color: #6c757d;
+    margin: 4px 0 10px;
+}
+
+.prato strong {
+    color: #e63946;
+}
+
+.rodape {
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+    font-size: 0.9em;
+}
